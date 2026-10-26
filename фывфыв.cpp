@@ -93,7 +93,7 @@ private:
             }
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Ошибка ввода. Попробуйте снова.\n";
+            cout << "ошибка " "\n";
         }
     }
     string readString(const string& prompt) {
@@ -119,7 +119,7 @@ public:
         books.push_back(make_shared<Book>(nextBookId++, "Евгений Онегин", "А.С. Пушкин", 1833));
         books.push_back(make_shared<Book>(nextBookId++, "Отцы и дети", "И.С. Тургенев", 1862));
 
-        readers.push_back(make_shared<Reader>(nextReaderId++, "Иван Иванов", "+7-900-111-22-33"));
+        readers.push_back(make_shared<Reader>(nextReaderId++, "Иван Иванов", "+8-800-535-35"));
         readers.push_back(make_shared<Reader>(nextReaderId++, "Мария Петрова", "+7-900-444-55-66"));
         auto b = books.front();
         auto r = readers.front();
